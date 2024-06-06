@@ -1,0 +1,765 @@
+{
+    "RoomName": "29",
+    "Imports": [
+        "CamModule",
+        "gs_projectors",
+        "gs_Led",
+        "gui_WatchOut",
+        "gs_WatchOut",
+        "gs_dtp204t",
+        "gs_dataServ",
+		"gs_Codec_Vcs_Granat_C4",
+		"smp352",
+        "MicCloacAudio",
+		"gs_wb_ms_v2"	
+    ],
+	
+	"PpData": {
+		"1": {
+			"page": "5.Video",
+			"saveToMemory": true,
+			"defaultPp": 12,
+			"supportPP": [
+				"Pp_Header",
+				"Pp_Pages",
+				"Pp.5_GroupsOutputs"
+			]
+		},
+
+		"6": {
+			"page": "5.Video",
+			"saveToMemory": true,
+			"defaultPp": 61,
+			"supportPP": [
+				"Pp_Header",
+				"Pp_Pages",
+				"Pp.5_JupitersConfig"
+			]
+		},
+		"2": {
+			"page": "6.Audio",
+			"saveToMemory": true,
+			"defaultPp": 21,
+			"supportPP": [
+				"Pp_Header",
+				"Pp_Pages"
+			]
+		},
+		"3": {
+			"page": "7.Cams",
+			"saveToMemory": true,
+			"supportPP": [
+				"Pp_Header",
+				"Pp_Pages"
+			]
+		},
+
+		"5": {
+			"page": "8.Lighting",
+			"saveToMemory": true,
+			"supportPP": [
+				"Pp_Header",
+				"Pp_Pages"
+			]
+		},
+		"4": {
+			"page": "9.Power",
+			"saveToMemory": true,
+			"supportPP": [
+				"Pp_Header",
+				"Pp_Pages"
+			]
+		},
+
+		"7": {
+			"page": "3.Vcs",
+			"supportPP": [
+				"Pp_Header_for_vcs_page"
+			]
+		},
+
+		"8": {
+			"page": "2.ControlRoom(Show)",
+			"supportPP": [],
+			"defoultPp": 80
+		},
+		"9": {
+			"page": "4.Presentations(FromServ)",
+			"supportPP": []
+		},
+
+		"10": "BackToSystemControl",
+
+		"11": "Pp.5_Recording",
+		"12": "Pp.5_OperatorsMonitors",
+
+		"21": "Pp.6_Inputs",
+		"22": "Pp.6_Inputs_mic",
+		"23": "Pp.6_Inputs_arm",
+		"24": "Pp.6_Outputs",
+
+		"61": "Pp.5_VW_1",
+		"62": "Pp.5_VW_2",
+		"63": "Pp.5_VW_3",
+		"64": "Pp.5_VW_4",
+		"65": "Pp.5_VW_5",
+		"66": "Pp.5_VW_6",
+		"67": "Pp.5_VW_7",
+		"68": "Pp.5_VW_8",
+
+		"80": "popScenarios",
+
+		"100": "Pp_General_Audio",
+		"101": "Pp_General_Audio",
+
+		"102": "Pp.5_GroupsInputs",
+
+		"10000": {
+			"page": "5.Video",
+			"saveToMemory": true,
+			"defoultPp": 12,
+			"supportPP": [
+				"Pp_Header",
+				"Pp_Pages",
+				"Pp.5_VideoOutputs"
+			]
+		}
+	},
+	
+	"TesiraData": {
+		"ip": "10.75.42.178",
+		"buttonShift": "1000",
+		"levelData": {
+		  "levelMin": "-30",
+		  "levelMax": "0",
+		  "levelDelta": "2"
+		},
+		"TesiraMaxLevel": "0",
+		"TesiraMinLevel": "-30",
+		"chanels": {
+				 // --- outs
+			"0": {
+			  "name": "Main",
+			  "nameTag": "Level150",
+			  "IdChanel": "1",
+			  "FbMute": 0,
+			  "FbLevel": 0,
+			  "FbBtn": 0
+			},
+			"1": {
+			  "name": "Subbuffer",
+			  "nameTag": "Level151",
+			  "IdChanel": "1",
+			  "FbMute": 0,
+			  "FbLevel": 0,
+			  "FbBtn": 1
+
+			},
+			"2": {
+			  "name": "Balcony",
+			  "nameTag": "Level152",
+			  "IdChanel": "1",
+			  "FbMute": 0,
+			  "FbLevel": 0,
+			  "FbBtn": 2
+
+			},
+			"3": {
+			  "name": "to VCS main mic",
+			  "nameTag": "Level162",
+			  "IdChanel": "1",
+			  "FbMute": 0,
+			  "FbLevel": 0,
+			  "FbBtn": 3
+			},
+			"4": {
+			  "name": "to VCS main cont.",
+			  "nameTag": "Level163",
+			  "IdChanel": "1",
+			  "FbMute": 0,
+			  "FbLevel": 0,
+			  "FbBtn": 4
+			},
+			"5": {
+			  "name": "to VCS second mic",
+			  "nameTag": "Level164",
+			  "IdChanel": "1",
+			  "FbMute": 0,
+			  "FbLevel": 0,
+			  "FbBtn": 5
+			},
+			"6": {
+			  "name": "to VCS second cont.",
+			  "nameTag": "Level165",
+			  "IdChanel": "1",
+			  "FbMute": 0,
+			  "FbLevel": 0,
+			  "FbBtn": 6
+			},
+			"7": {
+			  "name": "Rec",
+			  "nameTag": "Level136",
+			  "IdChanel": "1",
+			  "FbMute": 0,
+			  "FbLevel": 0,
+			  "FbBtn": 7
+			},
+
+				  // --- inputs - --
+			"10": {
+				"name": "Presentation",
+				"nameTag": "Level159",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 10
+			},
+			"11": {
+				"name": "Controller",
+				"nameTag": "Level158",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 11
+			},
+			"12": {
+				"name": "Static data server",
+				"nameTag": "Level160",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 12
+			},
+			"13": {
+				"name": "Dinamid data server",
+				"nameTag": "Level161",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 13
+			},
+			"14": {
+				"name": "Медиаплеер",
+				"nameTag": "Level85",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 14
+			},
+			"15": {
+				"name": "VCS Main",
+				"nameTag": "Level130",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 15
+			},
+			"16": {
+				"name": "VCS Secondery",
+				"nameTag": "Level131",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 16
+			},
+
+			// --- microfons - --
+			"20": {
+				"name": "Mic 1",
+				"nameTag": "Level26",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 20
+			},
+			"21": {
+				"name": "Mic 2",
+				"nameTag": "Level27",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 21
+			},
+			"22": {
+				"name": "Mic 3",
+				"nameTag": "Level28",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 22
+			},
+			"23": {
+				"name": "Mic 4",
+				"nameTag": "Level29",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 23
+			},
+			"24": {
+				"name": "Mic 5",
+				"nameTag": "Level30",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 24
+			},
+			"25": {
+				"name": "Mic 6",
+				"nameTag": "Level31",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 25
+			},
+			"26": {
+				"name": "Mic 7",
+				"nameTag": "Level32",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 26
+			},
+			"27": {
+				"name": "Mic 8",
+				"nameTag": "Level33",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 27
+			},
+
+			// --- ФКЬ - --
+			"30": {
+				"name": "ARM 1",
+				"nameTag": "Level77",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 30
+			},
+			"31": {
+				"name": "ARM 2",
+				"nameTag": "Level78",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 31
+			},
+			"32": {
+				"name": "ARM 3",
+				"nameTag": "Level79",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 32
+			},
+			"33": {
+				"name": "ARM 4",
+				"nameTag": "Level80",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 33
+			},
+			"34": {
+				"name": "ARM 5",
+				"nameTag": "Level81",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 34
+			},
+			"35": {
+				"name": "ARM 6",
+				"nameTag": "Level82",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 35
+			},
+			"36": {
+				"name": "ARM 7",
+				"nameTag": "Level83",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 36
+			},
+			"37": {
+				"name": "ARM 8",
+				"nameTag": "Level84",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 37
+			},
+			"38": {
+				"name": "ARM 8",
+				"nameTag": "Level75",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 38
+			},
+			"39": {
+				"name": "ARM 8",
+				"nameTag": "Level76",
+				"IdChanel": "1",
+				"FbMute": 0,
+				"FbLevel": 0,
+				"FbBtn": 39
+			}
+		}
+	},
+	
+    "CamData": {
+        "buttonShift": 3000,
+        "numPressets": 9,
+        "videoOut": 122,
+        "Devices": [
+            {
+                "ID": 1,
+                "IP": "10.75.41.151",
+                "login": "Admin",
+                "pass": "Admin",
+                "videoIn": 3
+            },
+            {
+                "ID": 2,
+                "IP": "10.75.41.152",
+                "login": "Admin",
+                "pass": "Admin",
+                "videoIn": 4
+            }
+        ]
+    },
+
+    "ProjData": {
+        "Devices": 
+		[
+			// --- Balcon - --
+			{
+				"IP": "10.75.42.101",
+				"login": "admin",
+				"pass": "",
+				"buttonID": "11100"
+			},
+			{
+				"IP": "10.75.42.107",
+				"login": "admin",
+				"pass": "",
+				"buttonID": "11100"
+			},
+			// --- Floor - --
+			{
+				"IP": "10.75.42.121",
+				"login": "admin",
+				"pass": "",
+				"buttonID": "11102"
+			},
+			{
+				"IP": "10.75.42.119",
+				"login": "admin",
+				"pass": "",
+				"buttonID": "11102"
+			},
+			{
+				"IP": "10.75.42.117",
+				"login": "admin",
+				"pass": "",
+				"buttonID": "11102"
+			},
+			{
+				"IP": "10.75.42.103",
+				"login": "admin",
+				"pass": "",
+				"buttonID": "11102"
+			},
+			// --- Peroni's Screen ---
+			{
+				"IP": "10.75.42.111",
+				"login": "admin",
+				"pass": "",
+				"buttonID": "11104"
+			},
+			{
+				"IP": "10.75.42.113",
+				"login": "admin",
+				"pass": "",
+				"buttonID": "11104"
+			},
+			{
+				"IP": "10.75.42.115",
+				"login": "admin",
+				"pass": "",
+				"buttonID": "11104"
+			},
+			{
+				"IP": "10.75.42.109",
+				"login": "admin",
+				"pass": "",
+				"buttonID": "11104"
+			},
+			// --- Dynamic Projector ---
+			{
+				"IP": "10.75.42.105",
+				"login": "admin",
+				"pass": "",
+				"buttonID": "11106"
+			}
+		]
+	},
+	// ---from up to down, from left to right - --
+	"LedsData": {
+		"Devices": 
+		[
+			{"IP": "10.75.41.159", "Port": "8001"},
+			{"IP": "10.75.41.170", "Port": "8001"},
+			{"IP": "10.75.41.180", "Port": "8001"},
+			{"IP": "10.75.41.181", "Port": "8001"},
+			{"IP": "10.75.41.163", "Port": "8001"},
+			{"IP": "10.75.41.164", "Port": "8001"},
+			{"IP": "10.75.41.176", "Port": "8001"},
+			{"IP": "10.75.41.177", "Port": "8001"},
+			{"IP": "10.75.41.182", "Port": "8001"},
+			{"IP": "10.75.41.160", "Port": "8001"},
+			{"IP": "10.75.41.165", "Port": "8001"},
+			{"IP": "10.75.41.166", "Port": "8001"},
+			{"IP": "10.75.41.178", "Port": "8001"},
+			{"IP": "10.75.41.179", "Port": "8001"},
+			{"IP": "10.75.41.161", "Port": "8001"},
+			{"IP": "10.75.41.162", "Port": "8001"},
+			{"IP": "10.75.41.167", "Port": "8001"},
+			{"IP": "10.75.41.168", "Port": "8001"},
+			{"IP": "10.75.41.172", "Port": "8001"},
+			{"IP": "10.75.41.171", "Port": "8001"},
+			{"IP": "10.75.41.169", "Port": "8001"},
+			{"IP": "10.75.41.173", "Port": "8001"},
+			{"IP": "10.75.41.174", "Port": "8001"},
+			{"IP": "10.75.41.175", "Port": "8001"}
+		]
+	},
+	// --- Source to main led wall - --
+	"DtpData": {
+		"Devices":
+			[
+				{
+					"IP": "10.75.42.209",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.210",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.211",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.212",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.213",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.214",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.215",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.216",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.217",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.218",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.219",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.220",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.221",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.222",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.223",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.224",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.225",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				},
+				{
+					"IP": "10.75.42.226",
+					"Port": "23",
+					"login": "admin",
+					"pass": ""
+				}
+			]
+	},
+	
+	"DDServData": {
+		"Devices": 
+		[        
+			{
+				"IP": "10.75.44.1",
+				"Port": "23",
+				"login": "crestron",
+				"pass": "P@ssw0rd12!"
+			},
+			{
+				"IP": "10.75.44.2",
+				"Port": "23",
+				"login": "crestron",
+				"pass": "P@ssw0rd12!"
+			}
+		]
+	},
+	
+	"JupiterData": {
+		"Devices": 
+		[                
+			{
+				"IP": "10.75.42.243",
+				"Port": "25456",
+				"login": "",
+				"pass": ""
+			},
+			{
+				"IP": "10.75.42.244",
+				"Port": "25456",
+				"login": "",
+				"pass": ""
+			}
+		]
+	},
+	
+	"VcsData": {
+		"Devices": 
+		[                
+			{
+				"IP": "10.75.42.231",
+				"Port": "80",
+				"login": "extron",
+				"pass": "extron"
+			},
+			{
+				"IP": "10.75.42.232",
+				"Port": "80",
+				"login": "extron",
+				"pass": "extron"
+			}
+		]
+	},
+	
+	"PicUpdaterData": {
+		"Devices": 
+		[                
+			{
+				"IP": "10.75.42.63",
+				"Port": "9090",
+				"login": "",
+				"pass": ""
+			}
+		]
+	},
+	
+	"WatchoutData": {
+		"Devices": 
+		[                
+			{
+				"IP": "10.75.42.63",
+				"Port": "3040",
+				"login": "",
+				"pass": ""
+			}
+		]
+	},
+	
+	"Smp352Data": {
+		"Devices": 
+		[                
+			{
+				"IP": "10.75.42.47",
+				"Port": "22023",
+				"login": "admin",
+				"pass": ""
+			}
+		]
+	},
+
+	"SensorsData": {
+    		"Devices": 
+		                
+			{
+				"Port": "COM7",
+				"Baud": 9600,
+				"Data": 8,
+				"Parity": "None",
+				"Stop": 2,
+				"FlowControl":"Off",
+				"CharDelay":0,
+				"Mode":"RS485",
+				"Adresess":["1E","55","4E","59","35"],
+				"Positions": ["31 floor|| Main Led || DT-LED-29.1", "31 floor|| Main Led || DT-LED-29.1.2", "31 floor|| Main Led || DT-LED-29.1.3", "31 floor|| Left Led || DT-LED-29.2", "31 floor|| Right Led || DT-LED-29.3"]
+			}
+		
+	}
+}
